@@ -1,3 +1,4 @@
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\appSettings.json
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Migrator.deps.json
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Migrator.runtimeconfig.json
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Migrator.dll
@@ -17,4 +18,3 @@ C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\ob
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.pdb
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\ref\WebApplication5LVL.Migrator.dll
-C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\appSettings.json
