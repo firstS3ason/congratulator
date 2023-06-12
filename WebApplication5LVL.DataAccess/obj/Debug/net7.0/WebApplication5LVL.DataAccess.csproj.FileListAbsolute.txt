@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\bin\Debug\net7.0\WebApplication5LVL.DataAccess.deps.json
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\bin\Debug\net7.0\WebApplication5LVL.DataAccess.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\bin\Debug\net7.0\WebApplication5LVL.DataAccess.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\bin\Debug\net7.0\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\bin\Debug\net7.0\WebApplication5LVL.Domain.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.csproj.CopyComplete
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\refint\WebApplication5LVL.DataAccess.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\WebApplication5LVL.DataAccess.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.DataAccess\obj\Debug\net7.0\ref\WebApplication5LVL.DataAccess.dll
