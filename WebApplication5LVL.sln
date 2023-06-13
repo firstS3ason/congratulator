@@ -13,11 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CC686B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{7C095C21-6AFE-40E3-BA96-E104EEBB1608}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.Domain", "WebApplication5LVL.Domain\WebApplication5LVL.Domain.csproj", "{A5518245-D1A6-4B09-BF63-6B17BB59D4A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.Domain", "WebApplication5LVL.Domain\WebApplication5LVL.Domain.csproj", "{A5518245-D1A6-4B09-BF63-6B17BB59D4A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.DataAccess", "WebApplication5LVL.DataAccess\WebApplication5LVL.DataAccess.csproj", "{5975BB65-C619-4C0A-99CD-574CA782EBF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.DataAccess", "WebApplication5LVL.DataAccess\WebApplication5LVL.DataAccess.csproj", "{5975BB65-C619-4C0A-99CD-574CA782EBF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.Migrator", "WebApplication5LVL.Migrator\WebApplication5LVL.Migrator.csproj", "{A55C8F21-C491-402C-9FD9-547016936E15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.Migrator", "WebApplication5LVL.Migrator\WebApplication5LVL.Migrator.csproj", "{A55C8F21-C491-402C-9FD9-547016936E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.Infrastructure", "WebApplication5LVL.Infrastructure\WebApplication5LVL.Infrastructure.csproj", "{FDCE1038-85BC-4040-A120-FA14B73F691E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.AppData", "WebApplication5LVL.AppData\WebApplication5LVL.AppData.csproj", "{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.Contracts", "WebApplication5LVL.Contracts\WebApplication5LVL.Contracts.csproj", "{011354C3-637B-4EBC-B1AC-DB773674053A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,18 @@ Global
 		{A55C8F21-C491-402C-9FD9-547016936E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A55C8F21-C491-402C-9FD9-547016936E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A55C8F21-C491-402C-9FD9-547016936E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDCE1038-85BC-4040-A120-FA14B73F691E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDCE1038-85BC-4040-A120-FA14B73F691E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDCE1038-85BC-4040-A120-FA14B73F691E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDCE1038-85BC-4040-A120-FA14B73F691E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{011354C3-637B-4EBC-B1AC-DB773674053A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011354C3-637B-4EBC-B1AC-DB773674053A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011354C3-637B-4EBC-B1AC-DB773674053A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011354C3-637B-4EBC-B1AC-DB773674053A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +63,9 @@ Global
 		{A5518245-D1A6-4B09-BF63-6B17BB59D4A7} = {CC686BDA-8FF7-4A71-9EAE-C0F2115DFB51}
 		{5975BB65-C619-4C0A-99CD-574CA782EBF9} = {7C431E47-3C8F-4587-B4F9-4312FEE5646F}
 		{A55C8F21-C491-402C-9FD9-547016936E15} = {7C095C21-6AFE-40E3-BA96-E104EEBB1608}
+		{FDCE1038-85BC-4040-A120-FA14B73F691E} = {7C431E47-3C8F-4587-B4F9-4312FEE5646F}
+		{F834BA56-CCE6-404A-B7EC-EDDA6BF401D3} = {D96B6240-37F3-4650-8AD0-FF95318574F5}
+		{011354C3-637B-4EBC-B1AC-DB773674053A} = {63986665-B6AC-4D99-845B-E9490BD5F88A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99C40D0D-9AFC-4607-98E3-8587649AFC7F}

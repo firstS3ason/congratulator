@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.csproj.CoreCompileInputs.cache

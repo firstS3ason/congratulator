@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication5LVL.Contracts\WebApplication5LVL.Contracts.csproj" />
+    <ProjectReference Include="..\WebApplication5LVL.Domain\WebApplication5LVL.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
