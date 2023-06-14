@@ -4,7 +4,7 @@ namespace WebApplication5LVL.Infrastructure.Repositories
 {
     public interface IRepository<T> where T : class
     {
-        public Task<IQueryable<T>> GetAll(CancellationToken token = default);
+        public IQueryable<T> GetAll(CancellationToken token = default);
         public Task<IQueryable<T>> GetAllFiltered(Expression<Func<T, bool>> filter, CancellationToken token = default);
         public Task<T> GetById(Guid id, CancellationToken token = default);
         public Task AddAsync(T objectToAdd, CancellationToken token = default);

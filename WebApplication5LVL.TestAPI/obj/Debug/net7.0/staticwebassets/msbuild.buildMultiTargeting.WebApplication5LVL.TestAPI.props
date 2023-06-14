@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebApplication5LVL.TestAPI.props" />
+</Project>

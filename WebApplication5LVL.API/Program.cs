@@ -50,17 +50,12 @@ namespace WebApplication5LVL.API
 
             builder.Services.AddSwaggerGen(options =>
             {
-
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Apterra Adverts Api", Version = "V1" });
 
                 options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory,
                 $"{typeof(CreateUserRequest).Assembly.GetName().Name}.xml")));
 
-
-
                 options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory, "documentation.xml")));
-
-
             });
 
             var app = builder.Build();

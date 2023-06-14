@@ -8,7 +8,10 @@ namespace WebApplication5LVL.Infrastructure.Repositories
         protected DbContext dbContext { get; }
         protected DbSet<T> dbSet { get; }
         public Repository(DbContext _dbContext)
-        => (dbContext, dbSet) = (_dbContext, _dbContext.Set<T>());
+        {
+           dbContext = _dbContext;
+           dbSet = _dbContext.Set<T>();
+        }
         
         public async Task AddAsync(T objectToAdd, CancellationToken token)
         {
@@ -25,8 +28,8 @@ namespace WebApplication5LVL.Infrastructure.Repositories
             await dbContext.SaveChangesAsync();
         }
 
-        public async Task<IQueryable<T>> GetAll(CancellationToken token)
-            => await Task.Run(() => dbSet);
+        public IQueryable<T> GetAll(CancellationToken token)
+            => dbSet;
 
         public async Task<IQueryable<T>> GetAllFiltered(Expression<Func<T, bool>>? filter, CancellationToken token)
         {
@@ -39,7 +42,7 @@ namespace WebApplication5LVL.Infrastructure.Repositories
 
         public async Task UpdateAsync(T objectToUpdate, CancellationToken token)
         {
-            if (!(objectToUpdate is T) && Equals(objectToUpdate,null)) throw new ArgumentNullException(nameof(objectToUpdate));
+            if (!(objectToUpdate is T) || Equals(objectToUpdate,null)) throw new ArgumentNullException(nameof(objectToUpdate));
             await Task.Run(() => dbSet.Update(objectToUpdate));
             await dbContext.SaveChangesAsync();
         }

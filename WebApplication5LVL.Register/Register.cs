@@ -15,6 +15,8 @@ namespace WebApplication5LVL.Register
             .AddScoped((Func<IServiceProvider, DbContext>)(sp => sp.GetRequiredService<DbAppContext>()))
             .AddScoped(typeof(IRepository<>), typeof(Repository<>))
             .AddTransient<IUserService, UserService>()
-            .AddTransient<IUserRepository, UserRepository>();
+            .AddTransient<IUserRepository, UserRepository>()
+            .AddLogging();
+            
     }
 }
