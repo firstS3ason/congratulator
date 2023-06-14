@@ -18,3 +18,10 @@ C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\ob
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.pdb
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\obj\Debug\net7.0\ref\WebApplication5LVL.Migrator.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.AppData.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Infrastructure.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.AppData.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Contracts.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Contracts.xml
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Migrator\bin\Debug\net7.0\WebApplication5LVL.Infrastructure.pdb

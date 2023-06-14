@@ -1,28 +1,41 @@
 ﻿
+using AutoMapper;
 using WebApplication5LVL.Contracts.User;
 
 namespace WebApplication5LVL.AppData.Contexts.User
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
-        public Task AddAsync(CreateUserRequest createRequest, CancellationToken token = default)
+        private IMapper mapper { get; }
+        private IUserRepository userRepository { get; }
+        public UserService(IMapper _mapper, IUserRepository _userRepository)
         {
-            throw new NotImplementedException();
+            mapper = _mapper;
+            userRepository = _userRepository;
+        }
+        public async Task AddAsync(CreateUserRequest createRequest, CancellationToken token = default)
+        {
+            Domain.Models.User model = mapper.Map<Domain.Models.User>(createRequest);
+            await userRepository.AddAsync(model);
         }
 
-        public Task DeleteAsync(Guid id, CancellationToken token = default)
+        public async Task DeleteAsync(Guid id, CancellationToken token = default)
         {
-            throw new NotImplementedException();
+            Domain.Models.User user = await userRepository.FindByIdAsync(id);
+            await userRepository.DeleteAsync(user);
         }
 
-        public Task<InfoUserResponse> FindById(Guid id, CancellationToken token = default)
+        public async Task<InfoUserResponse> FindByIdAsync(Guid id, CancellationToken token = default)
         {
-            throw new NotImplementedException();
+            Domain.Models.User user = await userRepository.FindByIdAsync(id);
+            return mapper.Map<InfoUserResponse>(user);
         }
 
-        public Task UpdateAsync(UpdateUserRequest updateRequest, CancellationToken token = default)
+        public async Task UpdateAsync(Guid id, UpdateUserRequest updateRequest, CancellationToken token = default)
         {
-            throw new NotImplementedException();
+            Domain.Models.User example = await userRepository.FindByIdAsync(id);
+            Domain.Models.User user = mapper.Map(updateRequest, example);
+            await userRepository.UpdateAsync(user);
         }
     }
 }

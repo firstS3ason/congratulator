@@ -51,6 +51,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -299,7 +305,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj"
+              },
+              "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

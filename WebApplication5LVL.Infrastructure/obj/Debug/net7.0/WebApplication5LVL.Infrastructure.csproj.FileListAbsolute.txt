@@ -3,3 +3,16 @@ C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastruct
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Infrastructure.deps.json
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Infrastructure.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Infrastructure.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Contracts.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Contracts.xml
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\bin\Debug\net7.0\WebApplication5LVL.Domain.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.csproj.CopyComplete
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\refint\WebApplication5LVL.Infrastructure.dll
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\WebApplication5LVL.Infrastructure.pdb
+C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Infrastructure\obj\Debug\net7.0\ref\WebApplication5LVL.Infrastructure.dll

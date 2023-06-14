@@ -222,6 +222,26 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "WebApplication5LVL.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/WebApplication5LVL.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApplication5LVL.Contracts.dll": {}
+        }
+      },
+      "WebApplication5LVL.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/WebApplication5LVL.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApplication5LVL.Domain.dll": {}
+        }
       }
     }
   },
@@ -619,12 +639,24 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WebApplication5LVL.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../WebApplication5LVL.Contracts/WebApplication5LVL.Contracts.csproj",
+      "msbuildProject": "../WebApplication5LVL.Contracts/WebApplication5LVL.Contracts.csproj"
+    },
+    "WebApplication5LVL.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApplication5LVL.Domain/WebApplication5LVL.Domain.csproj",
+      "msbuildProject": "../WebApplication5LVL.Domain/WebApplication5LVL.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AutoMapper >= 12.0.1",
-      "Microsoft.EntityFrameworkCore >= 7.0.5"
+      "Microsoft.EntityFrameworkCore >= 7.0.5",
+      "WebApplication5LVL.Contracts >= 1.0.0",
+      "WebApplication5LVL.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -659,7 +691,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj"
+            },
+            "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

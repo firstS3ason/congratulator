@@ -15,7 +15,7 @@ namespace WebApplication5LVL.DataAccess.Contexts.User
         public async Task DeleteAsync(Domain.Models.User user, CancellationToken token = default)
         => await repository.DeleteAsync(user, token);
 
-        public async Task<Domain.Models.User> FindById(Guid id, CancellationToken token = default)
+        public async Task<Domain.Models.User> FindByIdAsync(Guid id, CancellationToken token = default)
         => await repository.GetById(id, token);
 
         public async Task UpdateAsync(Domain.Models.User user, CancellationToken token = default)
