@@ -18,8 +18,8 @@ namespace WebApplication5LVL.DataAccess.Contexts.User
         public async Task<Domain.Models.User> FindByIdAsync(Guid id, CancellationToken token = default)
         => await repository.GetById(id, token);
 
-        public IQueryable<Domain.Models.User> GetAll()
-        => repository.GetAll();
+        public async Task<IQueryable<Domain.Models.User>> GetAllAsync()
+        => await repository.GetAllAsync();
 
         public async Task UpdateAsync(Domain.Models.User user, CancellationToken token = default)
         => await repository.UpdateAsync(user, token);

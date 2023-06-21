@@ -10,3 +10,15 @@ C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Domain\obj\
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Domain\obj\Debug\net7.0\refint\WebApplication5LVL.Domain.dll
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.pdb
 C:\Users\Administrator\Desktop\WebApplication5LVL\WebApplication5LVL.Domain\obj\Debug\net7.0\ref\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\bin\Debug\net7.0\WebApplication5LVL.Domain.deps.json
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\bin\Debug\net7.0\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\bin\Debug\net7.0\WebApplication5LVL.Domain.pdb
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\refint\WebApplication5LVL.Domain.dll
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\WebApplication5LVL.Domain.pdb
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Domain\obj\Debug\net7.0\ref\WebApplication5LVL.Domain.dll

@@ -25,9 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.AppData"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.Contracts", "WebApplication5LVL.Contracts\WebApplication5LVL.Contracts.csproj", "{011354C3-637B-4EBC-B1AC-DB773674053A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.Register", "WebApplication5LVL.Register\WebApplication5LVL.Register.csproj", "{E426995C-53A0-4A56-A2B0-6D2A57C32C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.Register", "WebApplication5LVL.Register\WebApplication5LVL.Register.csproj", "{E426995C-53A0-4A56-A2B0-6D2A57C32C3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5LVL.TestAPI", "WebApplication5LVL.TestAPI\WebApplication5LVL.TestAPI.csproj", "{7B54C781-FE13-4EE7-9EF4-E9E6402123A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication5LVL.TestAPI", "WebApplication5LVL.TestAPI\WebApplication5LVL.TestAPI.csproj", "{7B54C781-FE13-4EE7-9EF4-E9E6402123A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

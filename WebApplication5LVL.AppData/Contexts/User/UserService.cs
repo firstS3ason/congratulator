@@ -1,12 +1,10 @@
 ﻿
 using AutoMapper;
-using System.Collections.Immutable;
-using System.Collections.ObjectModel;
 using WebApplication5LVL.Contracts.User;
 
 namespace WebApplication5LVL.AppData.Contexts.User
 {
-    public class UserService : IUserService
+    public sealed class UserService : IUserService
     {
         private IMapper mapper { get; }
         private IUserRepository userRepository { get; }
@@ -16,9 +14,10 @@ namespace WebApplication5LVL.AppData.Contexts.User
             userRepository = _userRepository;
         }
 
-        public async Task AddAsync(CreateUserRequest createRequest, CancellationToken token = default)
+        public async Task AddAsync(CreateUserRequest createRequest,byte[] photo, CancellationToken token = default)
         {
             Domain.Models.User model = mapper.Map<Domain.Models.User>(createRequest);
+            model.photo = photo;
             await userRepository.AddAsync(model);
         }
 
@@ -32,14 +31,16 @@ namespace WebApplication5LVL.AppData.Contexts.User
         {
             Domain.Models.User user = await userRepository.FindByIdAsync(id);
             return mapper.Map<InfoUserResponse>(user);
+
         }
         
         public async Task<IReadOnlyCollection<InfoUserResponse>> GetAllAsync(CancellationToken token = default)
         {
-            return await Task.Run(() => userRepository
-                .GetAll()
+            IQueryable<Domain.Models.User> users = await userRepository.GetAllAsync();
+
+            return users
                 .Select(user => mapper.Map<InfoUserResponse>(user))
-                .ToList());
+                .ToList();
         }
 
         public async Task UpdateAsync(Guid id, UpdateUserRequest updateRequest, CancellationToken token = default)

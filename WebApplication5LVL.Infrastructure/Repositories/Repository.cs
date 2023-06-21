@@ -20,7 +20,6 @@ namespace WebApplication5LVL.Infrastructure.Repositories
             await dbContext.SaveChangesAsync();
         }
        
-      
         public async Task DeleteAsync(T objectToDelete, CancellationToken token)
         {
             if (Equals(objectToDelete, null) && !(objectToDelete is T)) throw new ArgumentNullException(nameof(objectToDelete));
@@ -28,8 +27,8 @@ namespace WebApplication5LVL.Infrastructure.Repositories
             await dbContext.SaveChangesAsync();
         }
 
-        public IQueryable<T> GetAll(CancellationToken token)
-            => dbSet;
+        public async Task<IQueryable<T>> GetAllAsync(CancellationToken token)
+            => await Task.Run(() => dbSet);
 
         public async Task<IQueryable<T>> GetAllFiltered(Expression<Func<T, bool>>? filter, CancellationToken token)
         {

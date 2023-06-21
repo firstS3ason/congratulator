@@ -1,7 +1,6 @@
-﻿
-namespace WebApplication5LVL.Contracts.User
+﻿namespace WebApplication5LVL.Contracts.User
 {
-    public class InfoUserResponse
+    public sealed class InfoUserResponse
     {
         public Guid Id { get; set; }
         public string? SFL { get; set; }

@@ -10,24 +10,27 @@ using WebApplication5LVL.Register;
 
 namespace WebApplication5LVL.API
 {
+    /// <summary>
+    /// Class program, including enter point
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            // Добавляем DbContext
+            // Adding DbContext into IOC container 
             builder.Services.AddSingleton<IDbContextOptionsConfigurator<DbAppContext>, DbContextConfiguration>();
 
             builder.Services.AddDbContext<DbAppContext>((sp, dbOptions) => sp
             .GetRequiredService<IDbContextOptionsConfigurator<DbAppContext>>()
             .Configure((DbContextOptionsBuilder<DbAppContext>)dbOptions));
 
-            builder.Services.AddScoped((Func<IServiceProvider, DbContext>)(sp => sp.GetRequiredService<DbAppContext>()));
+            //builder.Services.AddScoped((Func<IServiceProvider, DbContext>)(sp => sp.GetRequiredService<DbAppContext>()));
 
             builder.Services.ConfigureServices();
 
-            // Add repositories to the container.
+            // Add repositories into IOC container.
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 
@@ -62,7 +65,7 @@ namespace WebApplication5LVL.API
                 options.IncludeXmlComments(Path.Combine(Path.Combine(AppContext.BaseDirectory, "documentation.xml")));
             });
 
-            var app = builder.Build();
+            WebApplication app = builder.Build();
 
             app.UseStaticFiles();
 
@@ -75,7 +78,7 @@ namespace WebApplication5LVL.API
 
             app.UseHsts();
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseAuthentication();
             app.UseAuthorization();
@@ -86,7 +89,7 @@ namespace WebApplication5LVL.API
 
             static MapperConfiguration GetMapperConfiguration()
             {
-                var configuration = new MapperConfiguration(cfg =>
+                MapperConfiguration configuration = new MapperConfiguration(cfg =>
                 {
                     cfg.AddProfile<UserProfile>();
                 });

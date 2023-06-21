@@ -4,5 +4,72 @@
         <name>WebApplication5LVL.TestAPI</name>
     </assembly>
     <members>
+        <member name="T:WebApplication5LVL.API.Controllers.UserController">
+            <summary>
+            Controller for <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserService"/> model
+            </summary>
+        </member>
+        <member name="F:WebApplication5LVL.API.Controllers.UserController.userService">
+            <summary>
+            <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserService"/> object for communication with <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserRepository"/> object
+            </summary>
+        </member>
+        <member name="F:WebApplication5LVL.API.Controllers.UserController.logger">
+            <summary>
+            Logger for recording actions
+            </summary>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.#ctor(WebApplication5LVL.AppData.Contexts.User.IUserService,Microsoft.Extensions.Logging.ILogger{WebApplication5LVL.API.Controllers.UserController})">
+            <summary>
+            <see cref="T:WebApplication5LVL.API.Controllers.UserController"/> constructor
+            </summary>
+            <param name="_userService">UserService service, getting from IOC container</param>
+            <param name="_logger">ILogger service, getting from IOC container</param>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.CreateUserAsync(WebApplication5LVL.Contracts.User.CreateUserRequest,Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>
+            Request to create new user asynchronically in database
+            </summary>
+            <param name="createRequest">CreateUserRequest's object, DTO</param>
+            <param name="token">Token for operation cancellation</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.FindUserByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Request to find USER by identifier asynchronically from database
+            </summary>
+            <param name="id">User identifier</param>
+            <param name="token">Token for operation cancellation</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.GetAllUsersAsync(System.Threading.CancellationToken)">
+            <summary>
+            Request to get all users asynchronically from database
+            </summary>
+            <param name="token">Token for operation cancellation</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.UpdateUserInfoAsync(System.Guid,WebApplication5LVL.Contracts.User.UpdateUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            Request to update existing user's statement part asynchronically in database
+            </summary>
+            <param name="id">User's to update identifier</param>
+            <param name="request">DTO of UpdateUserRequest</param>
+            <param name="token">Token for operation cancellation</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.DeleteUserByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Request to delete existing user from database
+            </summary>
+            <param name="id"></param>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApplication5LVL.API.Program">
+            <summary>
+            Class program, including enter point
+            </summary>
+        </member>
     </members>
 </doc>

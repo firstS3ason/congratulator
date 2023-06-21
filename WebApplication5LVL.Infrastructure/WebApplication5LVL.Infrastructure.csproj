@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApplication5LVL.AppData\WebApplication5LVL.AppData.csproj" />
     <ProjectReference Include="..\WebApplication5LVL.Contracts\WebApplication5LVL.Contracts.csproj" />
     <ProjectReference Include="..\WebApplication5LVL.Domain\WebApplication5LVL.Domain.csproj" />
   </ItemGroup>

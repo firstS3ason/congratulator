@@ -5,6 +5,7 @@ using WebApplication5LVL.DataAccess.Db;
 using WebApplication5LVL.Infrastructure.Repositories;
 using WebApplication5LVL.AppData.Contexts.User;
 using WebApplication5LVL.DataAccess.Contexts.User;
+using WebApplication5LVL.AppData.Contexts.Telegram;
 
 namespace WebApplication5LVL.Register
 {
@@ -16,7 +17,7 @@ namespace WebApplication5LVL.Register
             .AddScoped(typeof(IRepository<>), typeof(Repository<>))
             .AddTransient<IUserService, UserService>()
             .AddTransient<IUserRepository, UserRepository>()
+            .AddTransient<BotServiceBase, BotService>()
             .AddLogging();
-            
     }
 }

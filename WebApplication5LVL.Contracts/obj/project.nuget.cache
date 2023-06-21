@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PMudEVZO1WQvxMezpVuZw+chQABQtNPfH12vby7B0g+4TQ5fpl9zu7xFKp/Ix4Zv4XvK0aoNcgQn+Aarb8YB7A==",
+  "dgSpecHash": "72IYVAN53Yvg6geGg56RT7Gidr87pBCxirY5XbR7+TpBdYSZKtC28mPDb3qTQk4iYPsMCL+GIehXzCaKV0Ojww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\WebApplication5LVL\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Contracts\\WebApplication5LVL.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

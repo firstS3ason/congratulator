@@ -1,7 +1,6 @@
-﻿
-namespace WebApplication5LVL.Contracts.User
+﻿namespace WebApplication5LVL.Contracts.User
 {
-    public class CreateUserRequest
+    public sealed class CreateUserRequest
     {
         public string? SFL { get; set; }
         public DateTime birthDay { get; set; }
