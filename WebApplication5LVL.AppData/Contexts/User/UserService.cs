@@ -3,7 +3,8 @@ using AutoMapper;
 using System.Timers;
 using WebApplication5LVL.AppData.Contexts.Mail;
 using WebApplication5LVL.Contracts.User;
-using WebApplication5LVL.AppData.Contexts.Telegram.ExtensionsMethods;
+using WebApplication5LVL.AppData.Contexts.ExtensionsMethods;
+using Org.BouncyCastle.Tls.Crypto.Impl.BC;
 
 namespace WebApplication5LVL.AppData.Contexts.User
 {
@@ -19,25 +20,24 @@ namespace WebApplication5LVL.AppData.Contexts.User
             mailService = _mailService;
         }
 
-        public async Task AddAsync(CreateUserRequest createRequest,byte[] photo, CancellationToken token = default)
+        public async Task AddAsync(CreateUserRequest createRequest, byte[] photo, CancellationToken token = default)
         {
             Domain.Models.User model = mapper.Map<Domain.Models.User>(createRequest);
             model.photo = photo;
 
+            System.Timers.Timer timer = new System.Timers.Timer(Math.Abs((DateTime.Now - model.birthDay).Milliseconds))
+            {
+                AutoReset = false
+            };
 
-            System.Timers.Timer timer = new System.Timers.Timer(Math.Abs((DateTime.Now - model.birthDay).Milliseconds));
             timer.Start();
-
             timer.Elapsed += async (object? sender, ElapsedEventArgs e)
                 =>
             {
-                string result = await mailService.SendMessage($"{model.SFL}, happy birthday to you! With {new DateTime().GetNextBirthdayDate() - DateTime.Now} "
+                string result = await mailService.SendMessage($"{model.SFL}, happy birthday to you! You are {model.birthDay.Year - DateTime.Now.Year} years old now!"
                 , model.eMail
                 , token);
-                Thread.Sleep(100);
-            };
-            timer.AutoReset = false;
- 
+            }; 
 
             await userRepository.AddAsync(model);
         }

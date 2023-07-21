@@ -39,15 +39,20 @@ namespace WebApplication5LVL.API.Controllers
         [ProducesResponseType((int)HttpStatusCode.Created)]
         public async Task<IActionResult> CreateUserAsync([FromForm]CreateUserRequest createRequest, CancellationToken token = default)
         {
-            byte[] photo = new byte[0];
+            byte[] photo = Array.Empty<byte>();
 
-            await using (MemoryStream ms = new MemoryStream())
-            await using (Stream fs = createRequest.file.OpenReadStream())
+            using (Stream reader = createRequest.file.OpenReadStream())
             {
-               await fs.CopyToAsync(ms);
-               photo = ms.ToArray();
-            }
+                using (MemoryStream memHolder = new MemoryStream())
+                {
+                    await reader
+                        .CopyToAsync(memHolder)
+                        .ConfigureAwait(false);
 
+                    photo = memHolder.ToArray();
+                }
+            }
+            
             await userService.AddAsync(createRequest, photo);
             
             logger.LogInformation($"User {createRequest.SFL} was added to database ");

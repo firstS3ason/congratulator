@@ -12,7 +12,5 @@ namespace WebApplication5LVL.AppData.Contexts.Mail
         /// <param name="cancellation"></param>
         /// <returns></returns>
         public Task<string> SendMessage(string message, string email, CancellationToken cancellation);
-
-
     }
 }

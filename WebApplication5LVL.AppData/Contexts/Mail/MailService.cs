@@ -4,7 +4,7 @@ using MailKit.Net.Smtp;
 
 namespace WebApplication5LVL.AppData.Contexts.Mail
 {
-    public class MailService : IMailService
+    public sealed class MailService : IMailService
     {
         public IConfiguration configuration;
 
@@ -15,14 +15,10 @@ namespace WebApplication5LVL.AppData.Contexts.Mail
 
         public async Task<string> SendMessage(string message, string email, CancellationToken cancellation)
         {
-            //var currentUser = await _userRepository.FindById((await _userService.GetCurrentUser(cancellation)).Id,cancellation);
             var subject = "Congratulation mail";
             try
             {
                 using var emailMessage = new MimeMessage();
-                string? pass = configuration["Mail:Password"];
-                string? address = configuration["Mail:Address"];
-
                 emailMessage.From.Add(new MailboxAddress("Solar", configuration["Mail:Address"]));
                 emailMessage.To.Add(new MailboxAddress("", email));
                 emailMessage.Subject = subject;
@@ -34,7 +30,7 @@ namespace WebApplication5LVL.AppData.Contexts.Mail
                 using (var client = new SmtpClient())
                 {
                     await client.ConnectAsync("smtp.mail.ru", 587, false);
-                    await client.AuthenticateAsync(address, pass);
+                    await client.AuthenticateAsync(configuration["Mail:Address"], configuration["Mail:Password"]);
                     await client.SendAsync(emailMessage);
 
                     await client.DisconnectAsync(true);

@@ -5,7 +5,7 @@ using File = System.IO.File;
 using Telegram.Bot.Polling;
 using System.Text.RegularExpressions;
 using System.Net.Http.Json;
-using WebApplication5LVL.AppData.Contexts.Telegram.ExtensionsMethods;
+using WebApplication5LVL.AppData.Contexts.ExtensionsMethods;
 
 namespace WebApplication5LVL.AppData.Contexts.Telegram
 {

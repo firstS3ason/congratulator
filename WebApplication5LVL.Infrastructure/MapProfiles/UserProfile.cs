@@ -11,8 +11,10 @@ namespace WebApplication5LVL.Infrastructure.MapProfiles
         {
             CreateMap<User, InfoUserResponse>()
                 .ReverseMap();
+
             CreateMap<User, CreateUserRequest>()
                 .ReverseMap();
+
             CreateMap<User, UpdateUserRequest>()
                 .ReverseMap();
         }
