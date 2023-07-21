@@ -4,14 +4,14 @@ using Telegram.Bot.Types.Enums;
 using File = System.IO.File;
 using Telegram.Bot.Polling;
 using System.Text.RegularExpressions;
-using WebApplication5LVL.AppData.Contexts.User;
-using WebApplication5LVL.Contracts.User;
+using System.Net.Http.Json;
+using WebApplication5LVL.AppData.Contexts.Telegram.ExtensionsMethods;
 
 namespace WebApplication5LVL.AppData.Contexts.Telegram
 {
     public sealed class BotService : BotServiceBase
     {
-        public BotService(IUserService userService) : base(new TelegramBotClient("6079642455:AAHclpVqyNytPxupauG1dKaqJaMQvzyajOY"), userService)
+        public BotService() : base(new TelegramBotClient("6079642455:AAHclpVqyNytPxupauG1dKaqJaMQvzyajOY"))
         {
             client.SetMyCommandsAsync(new List<BotCommand>()
             {
@@ -60,14 +60,13 @@ namespace WebApplication5LVL.AppData.Contexts.Telegram
                     }
                     else if (guidRegex.IsMatch(usersText))
                     {
-                        //InfoUserResponse existUser = await userService.FindByIdAsync(Guid.Parse(usersText));
+                     
                         using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, new Uri($"https://localhost:7119/getById?id={usersText}"));
                         using HttpClient httpClient = new HttpClient(new HttpClientHandler());
-                        using HttpResponseMessage response = await httpClient.SendAsync(request);
 
-                        
-                        //await client.SendTextMessageAsync(msg.Chat, Math.Abs(DateTime.Now.Second - existUser.birthDay.Second).ToString());
-                        await client.SendTextMessageAsync(msg.Chat, await response.Content.ReadAsStringAsync());
+                        using HttpResponseMessage response = await httpClient.SendAsync(request);
+                        Domain.Models.User? foundUser = await response.Content.ReadFromJsonAsync<Domain.Models.User>();
+                        await client.SendTextMessageAsync(msg.Chat, (foundUser.birthDay.GetNextBirthdayDate() - DateTime.Now).Days.ToString());
                     }
                     else
                         await client.SendTextMessageAsync(msg.Chat, "Understandable");

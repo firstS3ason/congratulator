@@ -4,13 +4,20 @@
         <name>WebApplication5LVL.TestAPI</name>
     </assembly>
     <members>
+        <member name="M:WebApplication5LVL.TestAPI.Controllers.BotController.StartBotAsync(System.Threading.CancellationToken)">
+            <summary>
+            Request to start telegram bot's activity async
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApplication5LVL.API.Controllers.UserController">
             <summary>
             Controller for <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserService"/> model
             </summary>
         </member>
         <member name="F:WebApplication5LVL.API.Controllers.UserController.userService">
-            <summary>
+            <summary> 
             <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserService"/> object for communication with <see cref="T:WebApplication5LVL.AppData.Contexts.User.IUserRepository"/> object
             </summary>
         </member>
@@ -26,7 +33,7 @@
             <param name="_userService">UserService service, getting from IOC container</param>
             <param name="_logger">ILogger service, getting from IOC container</param>
         </member>
-        <member name="M:WebApplication5LVL.API.Controllers.UserController.CreateUserAsync(WebApplication5LVL.Contracts.User.CreateUserRequest,Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+        <member name="M:WebApplication5LVL.API.Controllers.UserController.CreateUserAsync(WebApplication5LVL.Contracts.User.CreateUserRequest,System.Threading.CancellationToken)">
             <summary>
             Request to create new user asynchronically in database
             </summary>

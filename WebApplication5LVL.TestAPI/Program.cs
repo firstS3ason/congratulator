@@ -48,7 +48,7 @@ namespace WebApplication5LVL.API
 
             #endregion
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle :D here is my advice 
+            
             builder.Services.AddEndpointsApiExplorer();
 
             builder.Services.AddSwaggerGen(options =>
@@ -75,8 +75,16 @@ namespace WebApplication5LVL.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            
 
             app.UseHsts();
+
+            app.UseCors(builder => builder
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithExposedHeaders("Token-Expired")
+                .AllowCredentials()
+                .WithOrigins("http://localhost:787"));
 
             app.UseHttpsRedirection();
 

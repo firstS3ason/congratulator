@@ -14,6 +14,13 @@
         /// User's birthday
         /// </summary>
         public DateTime birthDay { get; set; }
+        /// <summary>
+        /// User's photo
+        /// </summary>
         public byte[] photo { get; set; }
+        /// <summary>
+        /// User's email
+        /// </summary>
+        public string eMail { get; set; }
     }
 }

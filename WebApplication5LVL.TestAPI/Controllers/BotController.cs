@@ -12,7 +12,11 @@ namespace WebApplication5LVL.TestAPI.Controllers
         private readonly BotServiceBase botService;
         public BotController(BotServiceBase _botService)
             => (botService) = (_botService);
-
+        /// <summary>
+        /// Request to start telegram bot's activity async
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         [HttpPost("/startBot")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> StartBotAsync(CancellationToken token = default)

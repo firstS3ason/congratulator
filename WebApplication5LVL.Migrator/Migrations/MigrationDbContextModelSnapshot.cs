@@ -35,6 +35,10 @@ namespace WebApplication5LVL.Migrator.Migrations
                     b.Property<DateTime>("birthDay")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("eMail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<byte[]>("photo")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");

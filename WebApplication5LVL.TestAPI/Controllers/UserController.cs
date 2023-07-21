@@ -11,7 +11,7 @@ namespace WebApplication5LVL.API.Controllers
     [ApiController()]
     public class UserController : ControllerBase
     {
-        /// <summary>
+        /// <summary> 
         /// <see cref="IUserService"/> object for communication with <see cref="IUserRepository"/> object
         /// </summary>
         private readonly IUserService userService;
@@ -37,12 +37,12 @@ namespace WebApplication5LVL.API.Controllers
         /// <returns></returns>
         [HttpPost("/create")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
-        public async Task<IActionResult> CreateUserAsync(CreateUserRequest createRequest, IFormFile file, CancellationToken token = default)
+        public async Task<IActionResult> CreateUserAsync([FromForm]CreateUserRequest createRequest, CancellationToken token = default)
         {
             byte[] photo = new byte[0];
 
             await using (MemoryStream ms = new MemoryStream())
-            await using (Stream fs = file.OpenReadStream())
+            await using (Stream fs = createRequest.file.OpenReadStream())
             {
                await fs.CopyToAsync(ms);
                photo = ms.ToArray();
@@ -108,16 +108,5 @@ namespace WebApplication5LVL.API.Controllers
             await userService.DeleteAsync(id);
             return Ok();
         }
-
-        #region К УДАЛЕНИЮ
-        [HttpGet("/gettto")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<IActionResult> Get(CancellationToken token = default)
-        {
-            var info = await userService.FindByIdAsync(Guid.Parse("a4ae3b11-3fa6-49ba-96aa-08db6cf089a3"));
-            return Ok(info);
-        } 
-        #endregion
     }
 }

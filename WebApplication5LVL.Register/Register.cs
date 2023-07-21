@@ -6,6 +6,7 @@ using WebApplication5LVL.Infrastructure.Repositories;
 using WebApplication5LVL.AppData.Contexts.User;
 using WebApplication5LVL.DataAccess.Contexts.User;
 using WebApplication5LVL.AppData.Contexts.Telegram;
+using WebApplication5LVL.AppData.Contexts.Mail;
 
 namespace WebApplication5LVL.Register
 {
@@ -15,6 +16,7 @@ namespace WebApplication5LVL.Register
         => services
             .AddScoped((Func<IServiceProvider, DbContext>)(sp => sp.GetRequiredService<DbAppContext>()))
             .AddScoped(typeof(IRepository<>), typeof(Repository<>))
+            .AddTransient<IMailService,MailService>()
             .AddTransient<IUserService, UserService>()
             .AddTransient<IUserRepository, UserRepository>()
             .AddTransient<BotServiceBase, BotService>()
