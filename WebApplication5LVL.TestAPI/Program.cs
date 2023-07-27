@@ -84,7 +84,7 @@ namespace WebApplication5LVL.API
                 .AllowAnyHeader()
                 .WithExposedHeaders("Token-Expired")
                 .AllowCredentials()
-                .WithOrigins("http://localhost:787"));
+                .WithOrigins("http://localhost:791"));
 
             app.UseHttpsRedirection();
 

@@ -52,3 +52,4 @@ C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Migrator\obj\Deb
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.pdb
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Migrator\obj\Debug\net7.0\WebApplication5LVL.Migrator.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Migrator\obj\Debug\net7.0\ref\WebApplication5LVL.Migrator.dll
+C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Migrator\bin\Debug\net7.0\Migrations\20230619140337_second.cs

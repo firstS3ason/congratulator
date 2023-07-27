@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using WebApplication5LVL.AppData.Contexts.User;
 using WebApplication5LVL.Contracts.User;
@@ -37,6 +38,7 @@ namespace WebApplication5LVL.API.Controllers
         /// <returns></returns>
         [HttpPost("/create")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> CreateUserAsync([FromForm]CreateUserRequest createRequest, CancellationToken token = default)
         {
             byte[] photo = Array.Empty<byte>();
@@ -52,7 +54,7 @@ namespace WebApplication5LVL.API.Controllers
                     photo = memHolder.ToArray();
                 }
             }
-            
+
             await userService.AddAsync(createRequest, photo);
             
             logger.LogInformation($"User {createRequest.SFL} was added to database ");

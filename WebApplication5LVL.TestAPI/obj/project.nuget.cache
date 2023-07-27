@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yNblcqkvSK6Y/WCIVVCuedUIyYPRHsJeFdZZ0vX5EAqriHvpymTGopS7/z1LH0870nVkEt6L5ZMEyxj2+wCuCA==",
+  "dgSpecHash": "vWYeY30stnIbj3VruaGQ2Rta9p6adodzA/eKoOq+wONelt2LIMFK9lMwpGJRunoaL9m+PmY4Hk5qOfV7Q6XjEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.TestAPI\\WebApplication5LVL.TestAPI.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mimekit\\4.1.0\\mimekit.4.1.0.nupkg.sha512",
