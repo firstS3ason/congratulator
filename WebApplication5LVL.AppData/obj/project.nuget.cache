@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZEpZLECVDKdQ4y0G3P1yYYK9o+1R+beORe/N5iPQm7XnnD2VXnj74fjTVG/sPPVJFaswLynt9LlwQWCCnYDwwA==",
+  "dgSpecHash": "iXDWfKLbGrZe0nKHVvfZx8lodx/5f3j7zfKcJvOV//uX+heSC+ChmJbUvYxYOtKUDHfWlQ8yAaAFZ2HsCI3brw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",

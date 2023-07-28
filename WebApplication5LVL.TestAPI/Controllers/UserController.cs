@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 using System.Net;
 using WebApplication5LVL.AppData.Contexts.User;
 using WebApplication5LVL.Contracts.User;
@@ -39,21 +38,21 @@ namespace WebApplication5LVL.API.Controllers
         [HttpPost("/create")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public async Task<IActionResult> CreateUserAsync([FromForm]CreateUserRequest createRequest, CancellationToken token = default)
+        public async Task<IActionResult> CreateUserAsync([FromBody]CreateUserRequest createRequest, CancellationToken token = default)
         {
             byte[] photo = Array.Empty<byte>();
 
-            using (Stream reader = createRequest.file.OpenReadStream())
-            {
-                using (MemoryStream memHolder = new MemoryStream())
-                {
-                    await reader
-                        .CopyToAsync(memHolder)
-                        .ConfigureAwait(false);
+            //using (Stream reader = createRequest.file.OpenReadStream())
+            //{
+            //    using (MemoryStream memHolder = new MemoryStream())
+            //    {
+            //        await reader
+            //            .CopyToAsync(memHolder)
+            //            .ConfigureAwait(false);
 
-                    photo = memHolder.ToArray();
-                }
-            }
+            //        photo = memHolder.ToArray();
+            //    }
+            //}
 
             await userService.AddAsync(createRequest, photo);
             

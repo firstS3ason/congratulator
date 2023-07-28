@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WGVfq1sjHqYuXrhH7Cn1nYmpEANNJH8/BFNULmMBiw+xQ69Ow4bDX+AOenbNoN+EB3m4bMhXHeR8+XN0SGLZ9A==",
+  "dgSpecHash": "Z4NWIIpSCByQ8xblFfgOWDmW8OpR2GftrCJMWMLVYnfu4uTNmox/pe+CAnTwcNryROiaagC13GnTQHWX/4qI/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Migrator\\WebApplication5LVL.Migrator.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Migrator\\WebApplication5LVL.Migrator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

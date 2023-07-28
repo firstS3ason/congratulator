@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vWYeY30stnIbj3VruaGQ2Rta9p6adodzA/eKoOq+wONelt2LIMFK9lMwpGJRunoaL9m+PmY4Hk5qOfV7Q6XjEg==",
+  "dgSpecHash": "KdJ2Q0JOeu0feGdpgXhBGIj4yOUnLwEN7xDVz16qShhtovHqima3Kq4O5fp1A76f8lrS4fVLnRPzDzfWRtRoxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.TestAPI\\WebApplication5LVL.TestAPI.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.TestAPI\\WebApplication5LVL.TestAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

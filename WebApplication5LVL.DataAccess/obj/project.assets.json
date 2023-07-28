@@ -3694,11 +3694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.DataAccess\\WebApplication5LVL.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.DataAccess\\WebApplication5LVL.DataAccess.csproj",
       "projectName": "WebApplication5LVL.DataAccess",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.DataAccess\\WebApplication5LVL.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.DataAccess\\WebApplication5LVL.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3720,14 +3720,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj"
+            "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.AppData\\WebApplication5LVL.AppData.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj"
+            "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Infrastructure\\WebApplication5LVL.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Infrastructure\\WebApplication5LVL.Infrastructure.csproj"
+            "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Infrastructure\\WebApplication5LVL.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Infrastructure\\WebApplication5LVL.Infrastructure.csproj"
             }
           }
         }

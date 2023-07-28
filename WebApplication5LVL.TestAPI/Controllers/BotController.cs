@@ -6,6 +6,9 @@ using WebApplication5LVL.AppData.Contexts.Telegram;
 
 namespace WebApplication5LVL.TestAPI.Controllers
 {
+    /// <summary>
+    /// BotController service. Holding endPoints with midllewareComponents to handle HTTP-requests
+    /// </summary>
     [ApiController()]
     public class BotController : ControllerBase
     {

@@ -10,8 +10,16 @@ using WebApplication5LVL.AppData.Contexts.Mail;
 
 namespace WebApplication5LVL.Register
 {
+    /// <summary>
+    /// Class, that holding func to configure inversion of control container
+    /// </summary>
     public static class Register
     {
+        /// <summary>
+        /// Function to configure DI container
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection ConfigureServices(this IServiceCollection services)
         => services
             .AddScoped((Func<IServiceProvider, DbContext>)(sp => sp.GetRequiredService<DbAppContext>()))

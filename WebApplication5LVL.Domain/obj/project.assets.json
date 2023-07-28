@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj",
       "projectName": "WebApplication5LVL.Domain",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Domain\\WebApplication5LVL.Domain.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\congratulator\\WebApplication5LVL.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\PreFinalVersion\\congratulator\\WebApplication5LVL.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

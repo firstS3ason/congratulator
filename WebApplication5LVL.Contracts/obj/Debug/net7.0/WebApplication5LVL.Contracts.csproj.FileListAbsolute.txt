@@ -26,3 +26,17 @@ C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Contracts\obj\De
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.xml
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.pdb
 C:\Users\Administrator\Desktop\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\ref\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\bin\Debug\net7.0\WebApplication5LVL.Contracts.deps.json
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\bin\Debug\net7.0\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\bin\Debug\net7.0\WebApplication5LVL.Contracts.pdb
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\bin\Debug\net7.0\WebApplication5LVL.Contracts.xml
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\refint\WebApplication5LVL.Contracts.dll
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.xml
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\WebApplication5LVL.Contracts.pdb
+C:\Users\Administrator\Desktop\PreFinalVersion\congratulator\WebApplication5LVL.Contracts\obj\Debug\net7.0\ref\WebApplication5LVL.Contracts.dll
