@@ -8,11 +8,6 @@ namespace WebApplication5LVL.AppData.Contexts.User
     /// </summary>
     public interface IUserService
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="token"></param>
-        /// <returns></returns>
         public Task<IReadOnlyCollection<InfoUserResponse>> GetAllAsync(CancellationToken token = default);
         public Task<InfoUserResponse> FindByIdAsync(Guid id, CancellationToken token = default);
         public Task AddAsync(CreateUserRequest createRequest, byte[] photo,  CancellationToken token = default);

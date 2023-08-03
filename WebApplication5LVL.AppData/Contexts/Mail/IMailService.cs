@@ -4,7 +4,7 @@ namespace WebApplication5LVL.AppData.Contexts.Mail
     public interface IMailService
     {
         /// <summary>
-        /// Отправка кода подтверждения пользователю
+        /// Abstract contract entity to sending info in birthday date to people, by virtual mail
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="email"></param>
