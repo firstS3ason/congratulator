@@ -4,6 +4,11 @@
         <name>WebApplication5LVL.TestAPI</name>
     </assembly>
     <members>
+        <member name="T:WebApplication5LVL.TestAPI.Controllers.BotController">
+            <summary>
+            BotController service. Holding endPoints with midllewareComponents to handle HTTP-requests
+            </summary>
+        </member>
         <member name="M:WebApplication5LVL.TestAPI.Controllers.BotController.StartBotAsync(System.Threading.CancellationToken)">
             <summary>
             Request to start telegram bot's activity async

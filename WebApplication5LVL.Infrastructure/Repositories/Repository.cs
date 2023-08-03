@@ -3,10 +3,6 @@ using System.Linq.Expressions;
 
 namespace WebApplication5LVL.Infrastructure.Repositories
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
     public class Repository<T> : IRepository<T> where T : class
     {
         protected DbContext dbContext { get; }
